@@ -67,31 +67,6 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## Usage
-
-### Data Exploration and Preprocessing
-```python
-# Example code for loading and preprocessing the dataset
-import pandas as pd
-from src.preprocessing import preprocess_data
-
-# Load the data
-df = pd.read_csv('data/raw/obesity_dataset.csv')
-
-# Preprocess the data
-X_train, X_test, y_train, y_test = preprocess_data(df)
-```
-
-### Model Training
-```python
-# Example code for training a model
-from src.models import train_random_forest
-
-# Train the model
-model, accuracy = train_random_forest(X_train, y_train, X_test, y_test)
-print(f"Model accuracy: {accuracy:.4f}")
-```
-
 ## Models and Performance
 
 | Model | Accuracy | Precision | Recall | F1 Score |
